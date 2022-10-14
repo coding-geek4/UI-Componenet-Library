@@ -18,3 +18,43 @@
      border-radius:0.5rem ;
      border: 1px solid var(--primary-color);
  }
+
+ .link-hover {
+    display: inline-block;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    padding: 20px;
+    width: 150px;
+    background-color: var(--primary-color);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .link-hover span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+ .link-hover span:after {
+    content: '\00bb';
+    position: absolute;
+    top: 0;
+    right: -15px;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  
+ .link-hover:hover span {
+    padding-right: 20px;
+  }
+  
+ .link-hover:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
